@@ -1,0 +1,103 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="jsge.png" />
+
+<script src="../JsGe/lib/prototype-1.7.js"></script>
+
+<!-- Game Engine Component -->
+<script src="../JsGe/src/GeArray2D.js"></script>
+<script src="../JsGe/src/GeLinkedList.js"></script>
+
+<script src="../JsGe/src/GeGlobals.js"></script>
+<script src="../JsGe/src/GeVar.js"></script>
+<script src="../JsGe/src/GeGenID.js"></script>
+<script src="../JsGe/src/GeObject.js"></script>
+<script src="../JsGe/src/GeLog.js"></script>
+<script src="../JsGe/src/GeVector2D.js"></script>
+
+<script src="../JsGe/src/GeDiscreteTime.js"></script>
+<script src="../JsGe/src/GeScreen.js"></script>
+<script src="../JsGe/src/GeMouse.js"></script>
+<script src="../JsGe/src/GeKeyboard.js"></script>
+<script src="../JsGe/src/GeImagePool.js"></script>
+<script src="../JsGe/src/GeWaitLoading.js"></script>
+
+<script src="../JsGe/src/GeCollision.js"></script>
+<script src="../JsGe/src/GeBounding.js"></script>
+<script src="../JsGe/src/GeBoundingShadow.js"></script>
+<script src="../JsGe/src/GeBoundingCircle.js"></script>
+<script src="../JsGe/src/GeBoundingBox.js"></script>
+
+<script src="../JsGe/src/GePhyState.js"></script>
+<script src="../JsGe/src/GeLevel.js"></script>
+
+<script src="../JsGe/src/GeTree.js"></script>
+<script src="../JsGe/src/GeTreeNode.js"></script>
+<script src="../JsGe/src/GeTreeNode_Map.js"></script>
+<script src="../JsGe/src/GeTreeNode_Monster.js"></script>
+<script src="../JsGe/src/GeTreeNode_Vector.js"></script>
+<script src="../JsGe/src/GeTreeNode_Grid.js"></script>
+<script src="../JsGe/src/GeTreeNode_Cell.js"></script>
+<script src="../JsGe/src/GeTreeNode_Collection.js"></script>
+<script src="../JsGe/src/GeTreeNode_Block.js"></script>
+<script src="../JsGe/src/GeTreeNode_Coordinate.js"></script>
+
+<script src="../JsGe/src/GeSprite.js"></script>
+
+<script src="../JsGe/src/GeCamera.js"></script>
+
+<script src="../JsGe/src/GeRenderer.js"></script>
+<script src="../JsGe/src/GeCore.js"></script>
+
+<script src="src/MtCore.js"></script>
+<script src="src/MtInitGlobals.js"></script>
+<!-- END -->
+
+<style>
+.bold {
+	weight: bold;
+	font-size: large;
+}
+</style>
+</head>
+<body id="GameHtmlBody" onLoad="ShoGE.Core.init(640,480);" style="background-color: grey; color:white;">  
+	<div style="align: center;">
+		<h1>MagicalTouch</h1>
+	</div>
+	<div style="clear:both;">
+		<canvas style="position: relative;" id="GameScreen"  width="640" height="480" ></canvas>
+	</div>
+	<div style="">
+		<div>
+			FPS:&nbsp;<span id="GameFPS">0</span>
+		</div>
+		<div>
+			Elapsed Time:&nbsp;<span id="GameElapsedTime">0</span>
+		</div>
+				<div>
+			Alpha:&nbsp;<span id="GameAlpha">0</span>
+		</div>
+		<div>
+			Mouse(<span id="clickatX">0</span>,&nbsp;<span id="clickatY">0</span>)
+		</div>
+		<div>
+			Click up(<span id="clickUpX">0</span>,&nbsp;<span id="clickUpY">0</span>)
+		</div>
+		<div>
+			Click down(<span id="clickDownX">0</span>,&nbsp;<span id="clickDownY">0</span>)
+		</div>
+		<div>
+			Mouse status:&nbsp;<span id="MouseStatus">0</span>
+		</div>	
+		<div>
+			Area:&nbsp;<span id="MouseArea">0</span>
+		</div>
+		<div>
+		<span id="GameMsg"></span>
+		</div>
+		<div>
+		<span id="GameDebug"></span>
+		</div>
+	</div>
+</body>
+</html>
