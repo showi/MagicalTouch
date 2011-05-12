@@ -1,6 +1,5 @@
-
-
 var MtLevelManager = Class.create(GeObject, {
+	
 	initialize: function($super, parent) {
 		$super(parent);
 	},
@@ -8,5 +7,5 @@ var MtLevelManager = Class.create(GeObject, {
 	load: function(num) {
 		
 	},
-
+	
 });
